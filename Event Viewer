@@ -1,0 +1,35 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Application Error" /> 
+  <EventID Qualifiers="0">1000</EventID> 
+  <Version>0</Version> 
+  <Level>2</Level> 
+  <Task>100</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-03-13T23:58:21.5800692Z" /> 
+  <EventRecordID>62424</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="0" ThreadID="0" /> 
+  <Channel>Application</Channel> 
+  <Computer>DESKTOP-3GJ30SN</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data>RuneLite.exe</Data> 
+  <Data>0.0.0.0</Data> 
+  <Data>5b50f2ae</Data> 
+  <Data>nvoglv64.dll</Data> 
+  <Data>31.0.15.3118</Data> 
+  <Data>63f9214a</Data> 
+  <Data>c0000409</Data> 
+  <Data>000000000191f4d5</Data> 
+  <Data>4160</Data> 
+  <Data>01d955ff9a7da699</Data> 
+  <Data>C:\Users\Codyb\AppData\Local\RuneLite\RuneLite.exe</Data> 
+  <Data>C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_abf7e4e84f20581c\nvoglv64.dll</Data> 
+  <Data>86a359f0-aa9e-432b-b0ac-a7d81bc38728</Data> 
+  <Data /> 
+  <Data /> 
+  </EventData>
+  </Event>
