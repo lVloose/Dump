@@ -1,0 +1,47 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="Application Error" /> 
+  <EventID Qualifiers="0">1000</EventID> 
+  <Version>0</Version> 
+  <Level>2</Level> 
+  <Task>100</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-03-14T03:09:07.4666621Z" /> 
+  <EventRecordID>62468</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="0" ThreadID="0" /> 
+  <Channel>Application</Channel> 
+  <Computer>DESKTOP-3GJ30SN</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data>RuneLite.exe</Data> 
+  <Data>0.0.0.0</Data> 
+  <Data>5b50f2ae</Data> 
+  <Data>nvoglv64.dll</Data> 
+  <Data>31.0.15.3118</Data> 
+  <Data>63f9214a</Data> 
+  <Data>c0000409</Data> 
+  <Data>000000000191f4d5</Data> 
+  <Data>48a0</Data> 
+  <Data>01d9560bfb8a9ac0</Data> 
+  <Data>C:\Users\Codyb\AppData\Local\RuneLite\RuneLite.exe</Data> 
+  <Data>C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_abf7e4e84f20581c\nvoglv64.dll</Data> 
+  <Data>92fa8696-94f5-4e0f-b9e7-c23f3f7ee7c8</Data> 
+  <Data /> 
+  <Data /> 
+  </EventData>
+  </Event>
+  
+  Faulting application name: RuneLite.exe, version: 0.0.0.0, time stamp: 0x5b50f2ae
+Faulting module name: nvoglv64.dll, version: 31.0.15.3118, time stamp: 0x63f9214a
+Exception code: 0xc0000409
+Fault offset: 0x000000000191f4d5
+Faulting process id: 0x48a0
+Faulting application start time: 0x01d9560bfb8a9ac0
+Faulting application path: C:\Users\Codyb\AppData\Local\RuneLite\RuneLite.exe
+Faulting module path: C:\WINDOWS\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_abf7e4e84f20581c\nvoglv64.dll
+Report Id: 92fa8696-94f5-4e0f-b9e7-c23f3f7ee7c8
+Faulting package full name: 
+Faulting package-relative application ID: 
