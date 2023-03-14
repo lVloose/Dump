@@ -1,8 +1,9 @@
-icrosoft (R) Windows Debugger Version 10.0.25200.1003 AMD64
+
+Microsoft (R) Windows Debugger Version 10.0.25200.1003 AMD64
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 
-Loading Dump File [C:\Users\XXXX\AppData\Local\CrashDumps\RuneLite.exe.16736.dmp]
+Loading Dump File [C:\Users\Codyb\AppData\Local\CrashDumps\RuneLite.exe.18592.dmp]
 User Mini Dump File: Only registers, stack and portions of memory are available
 
 
@@ -15,9 +16,9 @@ Windows 10 Version 19045 MP (8 procs) Free x64
 Product: WinNt, suite: SingleUserTS Personal
 Edition build lab: 19041.1.amd64fre.vb_release.191206-1406
 Machine Name:
-Debug session time: Mon Mar 13 16:58:26.000 2023 (UTC - 7:00)
+Debug session time: Mon Mar 13 20:09:08.000 2023 (UTC - 7:00)
 System Uptime: not available
-Process Uptime: 0 days 0:57:58.000
+Process Uptime: 0 days 2:40:04.000
 ................................................................
 ................................................................
 ....................
@@ -25,12 +26,12 @@ Loading unloaded module list
 ...
 This dump file has an exception of interest stored in it.
 The stored exception information can be accessed via .ecxr.
-(4160.1848): Security check failure or stack buffer overrun - code c0000409 (first/second chance not available)
+(48a0.4610): Security check failure or stack buffer overrun - code c0000409 (first/second chance not available)
 Subcode: 0x7 FAST_FAIL_FATAL_APP_EXIT 
 For analysis of this file, run !analyze -v
 nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0xc9525:
-00007ffd`6c49f4d5 cd29            int     29h
-0:070> !analyze -v
+00007ffd`3f02f4d5 cd29            int     29h
+0:073> !analyze -v
 *******************************************************************************
 *                                                                             *
 *                        Exception Analysis                                   *
@@ -41,13 +42,13 @@ nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0xc9525:
 KEY_VALUES_STRING: 1
 
     Key  : Analysis.CPU.mSec
-    Value: 562
+    Value: 577
 
     Key  : Analysis.DebugAnalysisManager
     Value: Create
 
     Key  : Analysis.Elapsed.mSec
-    Value: 649
+    Value: 591
 
     Key  : Analysis.IO.Other.Mb
     Value: 0
@@ -59,10 +60,10 @@ KEY_VALUES_STRING: 1
     Value: 0
 
     Key  : Analysis.Init.CPU.mSec
-    Value: 187
+    Value: 203
 
     Key  : Analysis.Init.Elapsed.mSec
-    Value: 29116
+    Value: 9134
 
     Key  : Analysis.Memory.CommitPeak.Mb
     Value: 179
@@ -74,7 +75,7 @@ KEY_VALUES_STRING: 1
     Value: 7
 
     Key  : Timeline.Process.Start.DeltaSec
-    Value: 3478
+    Value: 9604
 
     Key  : WER.OS.Branch
     Value: vb_release
@@ -86,7 +87,7 @@ KEY_VALUES_STRING: 1
     Value: 10.0.19041.1
 
 
-FILE_IN_CAB:  RuneLite.exe.16736.dmp
+FILE_IN_CAB:  RuneLite.exe.18592.dmp
 
 NTGLOBALFLAG:  0
 
@@ -98,19 +99,19 @@ APPLICATION_VERIFIER_FLAGS:  0
 
 CONTEXT:  (.ecxr)
 rax=0000000000000001 rbx=000000006e760038 rcx=0000000000000007
-rdx=000000d6131feea0 rsi=0000000000000000 rdi=0000027fe064e710
-rip=00007ffd6c49f4d5 rsp=000000d6131fee90 rbp=0000000000000007
- r8=000000d6131fee90  r9=000000d6131fee98 r10=0000000000000000
-r11=000000d6131fee88 r12=0000000000000000 r13=0000000000000000
+rdx=0000005a1dceeea0 rsi=0000000000000000 rdi=000002549e3b6450
+rip=00007ffd3f02f4d5 rsp=0000005a1dceee90 rbp=0000000000000007
+ r8=0000005a1dceee90  r9=0000005a1dceee98 r10=0000000000000000
+r11=0000005a1dceee88 r12=0000000000000000 r13=0000000000000000
 r14=0000000000000000 r15=0000000000000001
 iopl=0         nv up ei pl nz na pe nc
 cs=0033  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00000202
 nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0xc9525:
-00007ffd`6c49f4d5 cd29            int     29h
+00007ffd`3f02f4d5 cd29            int     29h
 Resetting default scope
 
 EXCEPTION_RECORD:  (.exr -1)
-ExceptionAddress: 00007ffd6c49f4d5 (nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0x00000000000c9525)
+ExceptionAddress: 00007ffd3f02f4d5 (nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0x00000000000c9525)
    ExceptionCode: c0000409 (Security check failure or stack buffer overrun)
   ExceptionFlags: 00000001
 NumberParameters: 1
@@ -125,26 +126,26 @@ EXCEPTION_CODE_STR:  c0000409
 
 EXCEPTION_PARAMETER1:  0000000000000007
 
-FAULTING_THREAD:  00001848
+FAULTING_THREAD:  00004610
 
 STACK_TEXT:  
-000000d6`131fee90 00007ffd`6beef17a     : 0000027f`e064e710 00000000`00000001 0000027f`e0640000 0000027f`c0000001 : nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0xc9525
-000000d6`131feec0 00007ffd`6bf44ea4     : 0000027f`4605e010 0000027f`4605e010 000000d6`131fef10 00007ffd`6bf3f08c : nvoglv64!DrvValidateVersion+0xcf5a
-000000d6`131ff340 00007ffd`6bf4507e     : 00000000`00000000 00007ffd`00000003 00000000`d2cfffe5 00000000`00000000 : nvoglv64!DrvPresentBuffers+0x2d9f4
-000000d6`131ff3b0 00007ffd`6c0639fc     : 00000008`3c1ffef9 00000000`00000000 00000000`00000001 00000000`00000001 : nvoglv64!DrvPresentBuffers+0x2dbce
-000000d6`131ff420 00007ffd`6bfb73e9     : 0000027f`4605e010 00000000`000186a0 00000000`00000001 00000000`00000001 : nvoglv64!DrvPresentBuffers+0x14c54c
-000000d6`131ff450 00007ffd`6bfbd578     : 0000027f`4605e010 0000027f`4224bc80 00000000`00000000 0000027f`4b03d7a0 : nvoglv64!DrvPresentBuffers+0x9ff39
-000000d6`131ff4e0 00007ffd`6bf6c546     : 0000027f`4605e010 00007ffd`6b93cf00 0000027f`467d0000 00007ffd`6bf72a01 : nvoglv64!DrvPresentBuffers+0xa60c8
-000000d6`131ff540 00007ffd`6bf73acf     : 0000027f`415de0b0 00000000`00000000 0000027f`428b0e48 00000000`00000000 : nvoglv64!DrvPresentBuffers+0x55096
-000000d6`131ff570 00007ffd`6bb525df     : 00000000`000186a0 0000027f`467d0000 0000027f`415de0b0 00007ffd`6b93cf2a : nvoglv64!DrvPresentBuffers+0x5c61f
-000000d6`131ff5b0 00007ffd`6bb4d2ee     : 0000027f`415de000 00007ffd`000088b9 00000000`00018601 0000027f`46829f00 : nvoglv64+0xfd25df
-000000d6`131ff630 00007ffd`6baa6f28     : 0000027f`428b0e64 0000027f`4a7cca08 0000027f`4a7cca08 00000000`00000064 : nvoglv64+0xfcd2ee
-000000d6`131ff670 00007ffd`6bc780f3     : 0000027f`49eec080 0000027f`4a7cca08 0000027f`428b0e70 0000027f`47f1e040 : nvoglv64+0xf26f28
-000000d6`131ff6a0 00007ffd`6bc77c77     : 0000027f`4a7ccec0 0000027f`4a7ccec0 00000000`00000000 00000000`00000000 : nvoglv64+0x10f80f3
-000000d6`131ff6f0 00007ffd`6beefc18     : 0000027f`4a7ccec0 00000000`00000000 00000000`00000000 00000000`00000000 : nvoglv64+0x10f7c77
-000000d6`131ff720 00007ffe`280e7614     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : nvoglv64!DrvValidateVersion+0xd9f8
-000000d6`131ff750 00007ffe`29fc26a1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
-000000d6`131ff780 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
+0000005a`1dceee90 00007ffd`3ea7f17a     : 00000254`9e3b6450 00000000`00000001 00000254`9e3b0000 00000254`c0000001 : nvoglv64!vk_icdNegotiateLoaderICDInterfaceVersion+0xc9525
+0000005a`1dceeec0 00007ffd`3ead4ea4     : 00000254`8a833650 00000254`8a833650 0000005a`1dceef10 00007ffd`3eacf08c : nvoglv64!DrvValidateVersion+0xcf5a
+0000005a`1dcef340 00007ffd`3ead507e     : 00000000`00000000 00007ffd`00000003 00000003`7cdc7655 00000000`00000000 : nvoglv64!DrvPresentBuffers+0x2d9f4
+0000005a`1dcef3b0 00007ffd`3ebf39fc     : 00000022`e09c9f58 00000000`00000000 00000000`00000001 00000000`00000001 : nvoglv64!DrvPresentBuffers+0x2dbce
+0000005a`1dcef420 00007ffd`3eb473e9     : 00000254`8a833650 00000000`000186a0 00000000`00000001 00000000`00000001 : nvoglv64!DrvPresentBuffers+0x14c54c
+0000005a`1dcef450 00007ffd`3eb4d578     : 00000254`8a833650 00000254`fecd8dd0 00000000`00000000 00000254`ff0d59f0 : nvoglv64!DrvPresentBuffers+0x9ff39
+0000005a`1dcef4e0 00007ffd`3eafc546     : 00000254`8a833650 00007ffd`3e4ccf00 00000254`8b9c0000 00007ffd`3eb02a01 : nvoglv64!DrvPresentBuffers+0xa60c8
+0000005a`1dcef540 00007ffd`3eb03acf     : 00000254`b130fba0 00000000`00000000 00000254`81473e3c 00000000`00000000 : nvoglv64!DrvPresentBuffers+0x55096
+0000005a`1dcef570 00007ffd`3e6e25df     : 00000000`000186a0 00000254`8b9c0000 00000254`b130fba0 00007ffd`3e4ccf2a : nvoglv64!DrvPresentBuffers+0x5c61f
+0000005a`1dcef5b0 00007ffd`3e6dd2ee     : 00000254`b130fb00 00007ffd`000088b9 00000000`00018601 00000254`8ba19f00 : nvoglv64+0xfd25df
+0000005a`1dcef630 00007ffd`3e636f28     : 00000254`81473e58 00000254`8d868a08 00000254`8d868a08 00000000`00000064 : nvoglv64+0xfcd2ee
+0000005a`1dcef670 00007ffd`3e8080f3     : 00000254`8cf88080 00000254`8d868a08 00000254`81473e64 00000254`8ba70040 : nvoglv64+0xf26f28
+0000005a`1dcef6a0 00007ffd`3e807c77     : 00000254`8d868ec0 00000254`8d868ec0 00000000`00000000 00000000`00000000 : nvoglv64+0x10f80f3
+0000005a`1dcef6f0 00007ffd`3ea7fc18     : 00000254`8d868ec0 00000000`00000000 00000000`00000000 00000000`00000000 : nvoglv64+0x10f7c77
+0000005a`1dcef720 00007ffe`280e7614     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : nvoglv64!DrvValidateVersion+0xd9f8
+0000005a`1dcef750 00007ffe`29fc26a1     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : kernel32!BaseThreadInitThunk+0x14
+0000005a`1dcef780 00000000`00000000     : 00000000`00000000 00000000`00000000 00000000`00000000 00000000`00000000 : ntdll!RtlUserThreadStart+0x21
 
 
 SYMBOL_NAME:  nvoglv64+c9525
@@ -153,7 +154,7 @@ MODULE_NAME: nvoglv64
 
 IMAGE_NAME:  nvoglv64.dll
 
-STACK_COMMAND:  ~70s ; .cxr ; kb
+STACK_COMMAND:  ~73s ; .cxr ; kb
 
 FAILURE_BUCKET_ID:  FAIL_FAST_FATAL_APP_EXIT_c0000409_nvoglv64.dll!Unknown
 
