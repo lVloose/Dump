@@ -1,0 +1,30 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="NVIDIA OpenGL Driver" /> 
+  <EventID Qualifiers="49152">1</EventID> 
+  <Version>0</Version> 
+  <Level>2</Level> 
+  <Task>0</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-03-14T03:09:06.9816525Z" /> 
+  <EventRecordID>62467</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="0" ThreadID="0" /> 
+  <Channel>Application</Channel> 
+  <Computer>DESKTOP-3GJ30SN</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data>A TDR has been detected. The application must close. Error code: 7 (pid=18592 tid=17936 runelite.exe 64bit) Visit http://nvidia.custhelp.com/app/answers/detail/a_id/3633 for more information.</Data> 
+  </EventData>
+  </Event>
+  
+  A TDR has been detected.
+The application must close.
+
+
+Error code: 7
+ (pid=18592 tid=17936 runelite.exe 64bit)
+
+Visit http://nvidia.custhelp.com/app/answers/detail/a_id/3633 for more information.
