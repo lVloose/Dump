@@ -1,0 +1,34 @@
+- <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+- <System>
+  <Provider Name="nvlddmkm" /> 
+  <EventID Qualifiers="0">0</EventID> 
+  <Version>0</Version> 
+  <Level>2</Level> 
+  <Task>0</Task> 
+  <Opcode>0</Opcode> 
+  <Keywords>0x80000000000000</Keywords> 
+  <TimeCreated SystemTime="2023-03-14T03:09:06.9776845Z" /> 
+  <EventRecordID>86795</EventRecordID> 
+  <Correlation /> 
+  <Execution ProcessID="4" ThreadID="10244" /> 
+  <Channel>System</Channel> 
+  <Computer>DESKTOP-3GJ30SN</Computer> 
+  <Security /> 
+  </System>
+- <EventData>
+  <Data>\Device\Video7</Data> 
+  <Data>Error occurred on GPUID: 300</Data> 
+  <Binary>00000000020030000000000000000000000000000000000000000000000000000000000000000000</Binary> 
+  </EventData>
+  </Event>
+  
+  The description for Event ID 0 from source nvlddmkm cannot be found. Either the component that raises this event is not installed on your local computer or the installation is corrupted. You can install or repair the component on the local computer.
+
+If the event originated on another computer, the display information had to be saved with the event.
+
+The following information was included with the event: 
+
+\Device\Video7
+Error occurred on GPUID: 300
+
+The message resource is present but the message was not found in the message table
